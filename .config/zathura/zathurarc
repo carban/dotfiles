@@ -1,0 +1,3 @@
+set font "inconsolata 15"
+set smooth-scroll "false"
+set selection-clipboard clipboard

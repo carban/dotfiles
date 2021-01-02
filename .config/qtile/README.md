@@ -1,6 +1,6 @@
 # Qtile
 
-![Qtile](../../.screenshots/qtile.png)
+***Qtile by Antonio Sarosi with my own customizations***
 
 ***Language***
 - [🇪🇸 Español](./README.es.md)

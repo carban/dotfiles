@@ -1,0 +1,6 @@
+# Composer
+picom & 
+# Network
+nm-applet &
+# Automount Devices
+udiskie -t &

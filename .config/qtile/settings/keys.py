@@ -50,7 +50,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ App Configs ------------
 
     # Menu
-    (["control", mod], "Return", lazy.spawn('rofi -show drun -theme gruvbox-dark-hard -font "hack 15" -icon-theme "Papirus" -show-icons')),
+    (["control", mod], "Return", lazy.spawn('rofi -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launchers/ribbon/ribbon_right.rasi -font "Hack 10"')),
 
     # Window Nav
     #([mod, "shift"], "m", lazy.spawn("rofi -show")),

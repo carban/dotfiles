@@ -28,6 +28,7 @@ alias chth="sh ~/.config/qtile/change_theme_qtile.sh"
 
 alias sudo="sudo "
 
+alias docker="sudo docker"
 
 #######################################################
 

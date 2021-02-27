@@ -51,3 +51,26 @@ export EDITOR=nvim;
 #PS1='🚀:\[\e[0;33m\]\W\[\e[0;32m\]$(gitPS1)\[\e[0;97m\]$ '
 # Normal Prompt
 PS1="🚀:\[\e[0;33m\]\W\[\e[0;97m\]$ "
+
+
+######################################################
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+# Add sbin directories to PATH.  This is useful on systems that have sudo
+echo $PATH | grep -Eq "(^|:)/sbin(:|)"     || PATH=$PATH:/sbin
+echo $PATH | grep -Eq "(^|:)/usr/sbin(:|)" || PATH=$PATH:/usr/sbin
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac

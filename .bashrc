@@ -30,6 +30,8 @@ alias sudo="sudo "
 
 alias docker="sudo docker"
 
+alias cleanup="sudo apt autoremove && sudo apt autoclean"
+
 #######################################################
 
 #LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
